@@ -44,11 +44,11 @@
 #     for i in LIST_SAMO:
 #         x = word.lower().count(i)
 #         print(f'Ilość samogłosek {i}: {x}')
-
-text = input('Podaj text: ')
-for i in range(len(text)):
-    if text[i] == "<":
-        start = i
-    elif text[i] == ">":
-        end = i
-        print((text[start+1:end]))
+##todo: text pomiędzy <>
+# text = input('Podaj text: ')
+# for i in range(len(text)):
+#     if text[i] == "<":
+#         start = i
+#     elif text[i] == ">":
+#         end = i
+#         print((text[start+1:end]))
