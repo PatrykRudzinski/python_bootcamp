@@ -29,15 +29,26 @@
 #copy vs deepcopy raw string
 
 ##todo:napisy
+#
+# while 1:
+#     word = input('Podaj słowo: ')
+#     if "break" == word:
+#         break
+#     LIST_SAMO = ['a', 'e', 'i', 'o', 'u', 'y']
+#     samogloski = 0
+#
+#     for i in LIST_SAMO:
+#         samogloski += word.lower().count(i)
+#     print(samogloski)
+#
+#     for i in LIST_SAMO:
+#         x = word.lower().count(i)
+#         print(f'Ilość samogłosek {i}: {x}')
 
-word = input('Podaj słowo: ')
-list_samo = ['a', 'e', 'i', 'o', 'u', 'y']
-samogloski = 0
-
-for i in list_samo:
-    samogloski += word.count(i)
-print(samogloski)
-
-for i in list_samo:
-    x = word.count(i)
-    print(f'Ilość samogłosek {i}: {x}')
+text = input('Podaj text: ')
+for i in range(len(text)):
+    if text[i] == "<":
+        start = i
+    elif text[i] == ">":
+        end = i
+        print((text[start+1:end]))
