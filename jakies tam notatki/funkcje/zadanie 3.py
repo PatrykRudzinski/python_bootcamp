@@ -10,14 +10,6 @@ def liczba_znaków_pomiędzy(napis, znak_str='<', znak_stp='>'):
             suma += start
     return suma
 
-
-
-
-
-
-
-
-
 def test_liczba_znaków_pomiędzy_znaki_podstawowe():
      assert liczba_znaków_pomiędzy('ala ma <kota> a kot ma ale') == 4
 

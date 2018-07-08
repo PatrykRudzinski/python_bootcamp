@@ -1,7 +1,7 @@
 ceny = {'ziemniaki': 2.50, 'pomidory': 4.00, 'pomarancze': 10.00, 'jablka': 8.00}
 ilosc_w_mag = {'ziemniaki': 5, 'pomidory': 5, 'pomarancze': 5, 'jablka': 5}
 
-while 1:
+while True:
     operacja = input('Chcesz dokonać [d]ostawy, [z]akupu, czy dodać [n]owy towar? (end żeby skonczyć)')
     if operacja == 'end':
         break
@@ -13,7 +13,7 @@ while 1:
 
     elif operacja == 'z':
         koszt = 0
-        while 1:
+        while True:
             for k, v in ceny.items():
                 print(f"- {k} w cenie: {v}")
 
