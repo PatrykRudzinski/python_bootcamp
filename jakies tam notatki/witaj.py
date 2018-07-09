@@ -47,6 +47,7 @@ sphere = 4/3 * pi * sphe_r **3
 # # todo formatowanie tekstu
 # name = "Alan"
 # height = 188
+# weight = 120
 #
 # print(f'Imię: {name}\nWzrost: {height}')
 
